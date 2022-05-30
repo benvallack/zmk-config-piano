@@ -1,0 +1,11 @@
+manifest:
+  remotes:
+    - name: benvallack
+      url-base: https://github.com/benvallack
+  projects:
+    - name: zmk
+      remote: benvallack
+      revision: repeatrollfix-tapdance-macro-mouse-dongle
+      import: app/west.yml
+  self:
+    path: config

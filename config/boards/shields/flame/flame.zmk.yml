@@ -1,0 +1,13 @@
+file_format: "1"
+id: flame
+name: The Flame 
+type: shield
+url: https://github.com/benvallack/zmk-config-flame
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - flame_left
+  - flame_right
+  - flame_dongle
