@@ -14,8 +14,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: flame_left
+    shield: piano_left
   - board: nice_nano_v2
-    shield: flame_right
+    shield: piano_right
   - board: nice_nano_v2
-    shield: flame_dongle
+    shield: piano_dongle

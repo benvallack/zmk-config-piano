@@ -4,4 +4,4 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "flame.dtsi"
+#include "piano.dtsi"

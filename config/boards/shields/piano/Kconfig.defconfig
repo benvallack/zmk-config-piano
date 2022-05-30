@@ -7,14 +7,14 @@ config ZMK_BLE
 config ZMK_USB
 	default y
 
-if SHIELD_FLAME_DONGLE
+if SHIELD_PIANO_DONGLE
 
 config ZMK_KEYBOARD_NAME
 	default "The Flame Dongle"
 
 endif
 
-if SHIELD_FLAME_LEFT || SHIELD_FLAME_RIGHT
+if SHIELD_PIANO_LEFT || SHIELD_PIANO_RIGHT
 
 config ZMK_SPLIT
 	default y
@@ -23,7 +23,7 @@ endif
 
 
 
-if SHIELD_FLAME_DONGLE 
+if SHIELD_PIANO_DONGLE 
 
 config ZMK_SPLIT
 	default y
