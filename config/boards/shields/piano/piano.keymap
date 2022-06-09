@@ -73,7 +73,7 @@
     behaviors {
         hm_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "HOMEROW_MODS_L";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <250>;
@@ -83,7 +83,7 @@
         };
         hm_r: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "HOMEROW_MODS_R";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <250>;
@@ -103,7 +103,7 @@
         };
         hl_l: homerow_layers_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_LAYERS";
+            label = "HOMEROW_LAYERS_L";
             #binding-cells = <2>;
             tapping-term-ms = <220>;
             quick-tap-ms = <250>;
@@ -113,7 +113,7 @@
         };
         hl_r: homerow_layers_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_LAYERS";
+            label = "HOMEROW_LAYERS_R";
             #binding-cells = <2>;
             tapping-term-ms = <220>;
             quick-tap-ms = <250>;
