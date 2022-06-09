@@ -71,7 +71,7 @@
     };
 
     behaviors {
-        hm: homerow_mods {
+        hm_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
@@ -79,6 +79,17 @@
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+	    hold-trigger-key-positions = <3 4 5 10 11 12 13 14>; // right hand
+        };
+        hm_r: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+	    hold-trigger-key-positions = <0 1 2 6 7 8 9>; // left hand
         };
         sr: shift_layer {
             compatible = "zmk,behavior-hold-tap";
@@ -90,7 +101,7 @@
             bindings = <&kp>, <&to>;
 	    retro-tap;
         };
-        hl: homerow_layers {
+        hl_l: homerow_layers_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_LAYERS";
             #binding-cells = <2>;
@@ -98,6 +109,17 @@
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
+	    hold-trigger-key-positions = <3 4 5 10 11 12 13 14>; // right hand
+        };
+        hl_r: homerow_layers_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_LAYERS";
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <250>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
+	    hold-trigger-key-positions = <0 1 2 6 7 8 9>; // left hand
         };
 	td: tapdance {
             compatible = "zmk,behavior-hold-tap";
@@ -121,13 +143,16 @@
 		bindings = < &sl AL2U >;
 	};
     };
+    // 				0		1		2					3		4			5
+    		6		7		8		9 					10		11			12 		13
+									14	15 	16 	17		
        keymap {
                 compatible = "zmk,keymap";
                 
        		alpha1 {
 		bindings = <
-		 		&hm LCTL L 	&hm LALT G 	&hm LGUI D		&hm RGUI H 	&hm RALT U    		&hm RCTL O	  
-		&hl NM1 I	&hl SM2 S	&hl SM1 R	&hl SYS T 	 	&hl SYS N    	&hl SM1 E   		&hl SM2 A 	&hl NM1 C
+		 		&hm_l LCTL L 	&hm_l LALT G 	&hm_l LGUI D		&hm_r RGUI H 	&hm_r RALT U    	&hm_r RCTL O	  
+		&hl_l NM1 I	&hl_l SM2 S	&hl_l SM1 R	&hl_l SYS T 	 	&hl_r SYS N    	&hl_r SM1 E   		&hl_r SM2 A 	&hl_r NM1 C
 			 	 		 		&mt LC(LS(LALT)) SPC &key_repeat  &caps_alpha2macro	&alpha2macro	 	
 		>;
 		};
@@ -157,7 +182,7 @@
 
 		num {
 		bindings = <
-				&hm LCTL DOT 	&hm LALT N0	&hm LGUI N1 		&hm RGUI N2 	&hm RALT N3		&hm RCTL N4	
+				&hm_l LCTL DOT 	&hm_l LALT N0	&hm_l LGUI N1 		&hm_r RGUI N2 	&hm_r RALT N3		&hm_r RCTL N4	
 		&kp MINUS	&kp PLUS 	&kp N5		&kp N6			&kp N7		&kp N8			&kp N9   	&kp EQUAL
 							&sr LSHIFT AL1 		&trans 		&trans 			&trans  	 
 		>;
