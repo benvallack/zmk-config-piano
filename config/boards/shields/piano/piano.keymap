@@ -97,7 +97,7 @@
             tapping-term-ms = <220>;
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
-            bindings = <&sl>, <&kp>;
+            bindings = <&mo>, <&kp>;
         };
 	td: tapdance {
             compatible = "zmk,behavior-hold-tap";
