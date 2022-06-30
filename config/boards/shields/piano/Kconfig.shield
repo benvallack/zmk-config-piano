@@ -1,11 +1,18 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_PIANO_LEFT
-	def_bool $(shields_list_contains,piano_left)
+config SHIELD_PIANO_DONGLE_LEFT
+	def_bool $(shields_list_contains,piano_dongle_left)
 
-config SHIELD_PIANO_RIGHT
-	def_bool $(shields_list_contains,piano_right)
+config SHIELD_PIANO_DONGLE_RIGHT
+	def_bool $(shields_list_contains,piano_dongle_right)
 
 config SHIELD_PIANO_DONGLE
 	def_bool $(shields_list_contains,piano_dongle)
+
+config SHIELD_PIANO_NORM_LEFT
+	def_bool $(shields_list_contains,piano_norm_left)
+
+config SHIELD_PIANO_NORM_RIGHT
+	def_bool $(shields_list_contains,piano_norm_right)
+
