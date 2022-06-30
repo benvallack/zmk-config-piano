@@ -1,6 +1,6 @@
 file_format: "1"
 id: piano
-name: The Flame 
+name: The Piano
 type: shield
 url: https://github.com/benvallack/zmk-config-piano
 requires: [pro_micro]
