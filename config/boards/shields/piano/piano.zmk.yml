@@ -8,6 +8,8 @@ exposes: [i2c_oled]
 features:
   - keys
 siblings:
-  - piano_left
-  - piano_right
+  - piano_dongle_left
+  - piano_dongle_right
   - piano_dongle
+  - piano_norm_left
+  - piano_norm_right
