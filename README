@@ -1,1 +1,1 @@
-This is a sheid set up for use with a dongle. You will need to add a third nice nano and just use connected to usb as a dongle. You will see the build action generates a firmware file for dongle, left and right nice!nanos. 
+Now generates firmwares for dongle or normal left/right configurations.
