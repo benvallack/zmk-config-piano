@@ -23,3 +23,5 @@ include:
     shield: piano_norm_left
   - board: nice_nano_v2
     shield: piano_norm_right
+  - board: nice_nano_v2
+    shield: puni

@@ -13,6 +13,13 @@ config ZMK_KEYBOARD_NAME
 	default "The Piano"
 
 endif
+if SHIELD_PUNI
+
+config ZMK_KEYBOARD_NAME
+	default "Puni"
+
+endif
+
 
 if SHIELD_PIANO_DONGLE_LEFT || SHIELD_PIANO_DONGLE_RIGHT || SHIELD_PIANO_NORM_RIGHT
 

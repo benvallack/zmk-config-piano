@@ -15,4 +15,8 @@ config SHIELD_PIANO_NORM_LEFT
 
 config SHIELD_PIANO_NORM_RIGHT
 	def_bool $(shields_list_contains,piano_norm_right)
+	
+config SHIELD_PUNI
+	def_bool $(shields_list_contains,puni)
+
 
