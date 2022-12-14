@@ -79,7 +79,6 @@
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-	    hold-trigger-key-positions = <3 4 5 10 11 12 13 14>; // right hand
         };
         hm_r: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
@@ -89,7 +88,6 @@
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-	    hold-trigger-key-positions = <0 1 2 6 7 8 9>; // left hand
         };
         sr: shift_layer {
             compatible = "zmk,behavior-hold-tap";
@@ -109,7 +107,6 @@
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
-	    hold-trigger-key-positions = <3 4 5 10 11 12 13 14>; // right hand
         };
         hl_r: homerow_layers_right {
             compatible = "zmk,behavior-hold-tap";
@@ -119,7 +116,6 @@
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
-	    hold-trigger-key-positions = <0 1 2 6 7 8 9>; // left hand
         };
 	td: tapdance {
             compatible = "zmk,behavior-hold-tap";
